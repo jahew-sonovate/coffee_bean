@@ -22,4 +22,4 @@ To run the application, open a terminal / command prompt, change directory to th
 > npm start
 ```
 
-This should write *Server live at http://localhost:18513* to the terminal window. You should now be able to visit http://localhost:18513 in your browser and see the app running. Make sure to read the [help page](http://localhost:18513/api) for details of the API. 
+This should write *Server live at http://localhost:18513* to the terminal window. You should now be able to visit [http://localhost:18513](http://localhost:18513) in your browser and see the app running. Make sure to read the [help page](http://localhost:18513/api) for details of the API. 
