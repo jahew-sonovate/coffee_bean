@@ -10,6 +10,7 @@ I want to be clear, there is no pass or fail with this. You will be time-boxed, 
 ##Requirements
 
 1. You will need to have [node.js](https://nodejs.org/en/) `>=0.10.25` installed on your machine. There is no database for this application, so as long as you have node.js installed, you should be good to go.
+1. You will need [Bower](http://bower.io/) installed globally
 1. Your favorite text editor / IDE.
  
 ##Getting started.
@@ -19,6 +20,8 @@ You will first need to fork this repository to your own GitHub account. See that
 To run the application, open a terminal / command prompt, change directory to the root of the repository and type:
 
 ```
+> npm install
+> bower install
 > npm start
 ```
 
