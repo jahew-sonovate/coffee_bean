@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Decaffeinated Las Flores",
+        "slug": "decaffeinated-las-flores",
+        "flavour": "Sticky Toffee Pudding",
+        "description": "From the first sip of this coffee I am struck with a rich toffee flavour and aroma. There is a mild apple-like acidity and a well-balanced caramel sweetness with a subtle raisin like aftertaste. This coffee has a creamy mouthfeel, with these flavour notes remind me of a delicious sticky toffee pudding",
+        "country": "Mexico",
+        "producer": "Las Flores community cooperative"
+    },
+    {
+        "name": "Fruit and Nut Espresso",
+        "slug": "fruit-and-nut-espresso",
+        "flavour": "Milk chocolate, fruit and nut",
+        "description": "The creamy milk chocolate flavours are really complemented by distinct almond and juicy raisin flavours. Its creamy mouthfeel and very light citrusy lemon acidity mean that it works really well with milky coffees. It ends up tasting like a sweet milky, hot chocolate.",
+        "country": "Brazil/Colombia",
+        "producer": "Sergio Mantovanni/José Daniel Muñoz Martinez"
+    },
+    {
+        "name": "Planalto",
+        "slug": "planalto",
+        "flavour": "Malt Milk Chocolate Shake",
+        "description": "Rich chocolate and malt flavours instantly flood your mouth on the first sip of thick, super creamy coffee. It has very light milky acidity which is dominated by milk chocolate sweetness and flavour.",
+        "country": "Brazil",
+        "producer": "Mariza Aparecida Franco Mantovanini and Sergio de Campos Mantovaninni"
+    },
+    {
+        "name": "La Bendicion Espresso",
+        "slug": "la-bendicion-espresso",
+        "flavour": "Kiwi and strawberry fruit salad with cream",
+        "description": "In my opinion, kiwi and strawberry together make the beginnings of a great fruit salad, and here they form the two most prominent flavour notes, complementing each other wonderfully. This coffee has a ripe sweetness also with cane sugar characteristics a crisp orange citrus acidity and really juicy mouthfeel.",
+        "country": "Honduras",
+        "producer": "Edgar Benjamín Girón Ventura"
+    },
+    {
+        "name": "Villaure",
+        "slug": "villaure",
+        "flavour": "Plum tart",
+        "description": "Baked plum aromas jump straight out of the ground coffee and follow through in the cup with a rich plum flavour and a mild lime finish. There’s a crystal clear, cane sugar and syrup sweetness to this coffee running alongside a nicely balanced lemon acidity (the kind of tart lemon taste you get from a tart au citron). All of this is held together by a silky mouthfeel.",
+        "country": "Guatemala",
+        "producer": "Aurelio Villatoro"
+    }
+]
+

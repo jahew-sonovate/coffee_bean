@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coffee Bean API</title>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-lg-8 col-lg-offset-2 page-header">
+			<h1>Welcome to Coffee Bean!</h1>
+			<h3>A playground for front end developers at Sonovate</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+			<p>
+				Coffee Bean is a simple Node / Angular application that allows front end developers to tune their skills with angular.js and general front end development. The idea with this app is to provide a back end API, which can be used to build a front end for it.
+			</p>
+			<p>
+				Coffee is an important part of any developer's tool belt. We at Sonovate enjoy a nice cup of joe, and like to know about the coffee we drink. This application should allow us to view a list of our favourite coffee and then view details of each coffee.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+			<h2>Instructions</h2>
+			<p>
+				Using the API as described below, we want you to build an <a href="https://angularjs.org/" target="_blank">angular.js</a> <abbr title="Single Page Application">SPA</abbr> that will provide two views:
+			</p>
+			<ul>
+				<li>A list view - to display a list of all the coffee. There are only 5 coffees to view, so there is no need to think about pagination.</li>
+				<li>A detail view - to display the details for a particular coffee</li>
+			</ul>
+			<p>
+				Your application should make use of either angular's own routing mechanism or <a href="https://angular-ui.github.io/" target="_blank">bootstrap's UI framework</a>. You should provide reasons for your choice. You are completely free to install any number of bower components you need. If your are not familiar with bower, I recommend you take a look at the <a href="http://bower.io/" target="_blank">website</a>.
+			</p>
+			<p>For details on how to submit your work, please check the <a href="https://github.com/Sonovate/coffee_bean">GitHub Repository</a></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+			<h2>The API</h2>
+			<p>
+				Below is a description of the API endpoints you can use in your angular application. All data for this application has been taken from <a href="http://pactcoffee.com" target="_new">Pact Coffee</a>
+			</p>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Endpoint</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<code>GET /api/coffee</code>
+						</th>
+						<td>
+							Lists all the coffee we like
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<code>GET /api/coffee/:slug</code>
+						</th>
+						<td>
+							Gets the detail of the given coffee. For example, to get details for the Planalto coffee you would request:
+							<code>GET /api/coffee/planalto</code>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>The Model</h3>
+			<p>Each coffee data item contains the following properties:</p>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Property Name</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">name</th>
+						<td>The name of the coffee</td>
+					</tr>
+					<tr>
+						<th scope="row">slug</th>
+						<td>The URL friendly identifier for the coffee. This is a unique value for each coffee.</td>
+					</tr>
+					<tr>
+						<th scope="row">flavour</th>
+						<td>A brief description of the coffee's flavour</td>
+					</tr>
+					<tr>
+						<th scope="row">description</th>
+						<td>A description of how the coffee tastes.</td>
+					</tr>
+					<tr>
+						<th scope="row">country</th>
+						<td>The country of origin</td>
+					</tr>
+					<tr>
+						<th scope="row">producer</th>
+						<td>The company / person who made the coffee</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>Responses</h3>
+			<p>The API provides data in JSON format. Each response will contain a <code>result</code> object which will contain the data requested.</p>
+			<h5>Example</h5>
+			<p>A request for the Planalto coffee would return a 200 OK response that looks like this:</p>
+			<pre>
+{
+  "result": {
+	"name": "Planalto",
+	"slug": "planalto",
+	"flavour": "Malt Milk Chocolate Shake",
+	"description": "Rich chocolate and malt flavo...",
+	"country": "Brazil",
+	"producer": "Mariza Aparecida Franco Mantovanini and Sergio de Campos Mantovaninni"
+  }
+}
+			</pre>
+			<p>While a list request would return a result that contained an array:</p>
+			<pre>
+{
+  "result": [
+    {...},
+    {...},
+  ]
+}
+			</pre>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
